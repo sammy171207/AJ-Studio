@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Card Text</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.card {
+    border: none; /* Remove card border */
+}
+.card-title, .card-text {
+    display: none; /* Hide title and description by default */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;" onclick="toggleText(this)">
+        <img class="card-img-top" src="image/todo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat the above card structure for the next three cards -->
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;" onclick="toggleText(this)">
+        <img class="card-img-top" src="image/todo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;" onclick="toggleText(this)">
+        <img class="card-img-top" src="image/todo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 18rem;" onclick="toggleText(this)">
+        <img class="card-img-top" src="image/todo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleText(card) {
+  var cardTitle = card.querySelector(".card-title");
+  var cardText = card.querySelector(".card-text");
+  
+  // Toggle the display of title and text
+  if (cardTitle.style.display === "none") {
+    cardTitle.style.display = "block";
+    cardText.style.display = "block";
+  } else {
+    cardTitle.style.display = "none";
+    cardText.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
