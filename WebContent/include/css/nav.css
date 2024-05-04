@@ -6,6 +6,8 @@
 }
 
 /* Center navbar items */
+
+
 .navbar-nav  {
     margin: auto;
     font-family: 'Courier New', Courier, monospace; /* Use a monospaced font */
@@ -17,6 +19,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 .navbar-nav .nav-item {
     margin-right: 15px; /* Adjust spacing between navbar items if needed */
