@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
 
         if (email.equals("admin") && phone.equals("0000000000")) {
             // Redirect to admin page
-            response.sendRedirect(request.getContextPath() + "/admin");
+            response.sendRedirect(request.getContextPath() + "/admin.jsp");
             return; // End the method here to prevent further execution
         }
 

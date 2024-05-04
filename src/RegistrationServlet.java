@@ -18,11 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    
   
-	
-
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 String firstName = request.getParameter("first_name");
 	        String lastName = request.getParameter("last_name");
@@ -43,7 +39,18 @@ public class RegistrationServlet extends HttpServlet {
 	            String currentDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 	            String sql = "INSERT INTO members (first_name, last_name, email, phone, address, city, state, zip_code, date_joined, membership_type) " +
 	                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-	            		
+	            	
+	            stmt = conn.prepareStatement(sql);
+	            stmt.setString(1, firstName);
+	            stmt.setString(2, lastName);
+	            stmt.setString(3, email);
+	            stmt.setString(4, phone);
+	            stmt.setString(5, address);
+	            stmt.setString(6, city);
+	            stmt.setString(7, state);
+	            stmt.setString(8, zipCode);
+	            stmt.setString(9, currentDate);
+	            stmt.setString(10, membershipType);
 	            stmt.executeUpdate();
 
 	            response.sendRedirect("login.html"); // Redirect to registration success page

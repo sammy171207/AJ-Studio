@@ -110,7 +110,7 @@
         </h2>
     </a>
     <a href="#home">Medical Test <i class="bi bi-heart-pulse"></i></a>
-    <a href="userList">Active Packs and Subscription <i class="bi bi-person-fill-check"></i></a>
+    <a href="/userList">Active Packs and Subscription <i class="bi bi-person-fill-check"></i></a>
     <a href="support.jsp">Support <i class="bi bi-person-lines-fill"></i></a>
     <a href="logout">Logout <i class="bi bi-box-arrow-right"></i></a>
 </div>

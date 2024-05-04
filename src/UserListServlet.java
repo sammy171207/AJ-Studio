@@ -32,7 +32,7 @@ public class UserListServlet extends HttpServlet {
                 printUserData(userList);
                 
                 // Forward the request to the JSP page
-           response.sendRedirect("s/admin/user.jsp");
+           response.sendRedirect("user.jsp");
             } catch (SQLException e) {
                 e.printStackTrace();
                 // Handle error
