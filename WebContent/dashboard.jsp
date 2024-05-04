@@ -214,7 +214,7 @@
             <p>Manage your diet plan</p>
         </div>
         <div class="card">
-            <i class="bi bi-calculator"></i>
+           <a href="bmi.html"> <i class="bi bi-calculator"></i></a>
             <h3>BMI</h3>
             <p>Calculate your Body Mass Index</p>
         </div>

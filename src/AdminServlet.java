@@ -23,7 +23,7 @@ public class AdminServlet extends HttpServlet {
 		   HttpSession session = request.getSession();
 	        session.setAttribute("totalUsers", totalUsers);// Implement this method to get the count from the database
 	        session.setAttribute("totalEnquiries", totalEnquiries);
-            response.sendRedirect("admin/admin.jsp");
+            response.sendRedirect("admin.jsp");
 
 	}
 

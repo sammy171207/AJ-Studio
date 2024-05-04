@@ -109,9 +109,9 @@
             <span style="color: #ec1010;">AJ</span> <span style="color: white;">Studio</span>
         </h2>
     </a>
-    <a href="#home">Medical Test <i class="bi bi-heart-pulse"></i></a>
-    <a href="/userList">Active Packs and Subscription <i class="bi bi-person-fill-check"></i></a>
-    <a href="support.jsp">Support <i class="bi bi-person-lines-fill"></i></a>
+    <a href="#home">Medical Test List<i class="bi bi-heart-pulse"></i></a>
+    <a href="userList">User List <i class="bi bi-person-fill-check"></i></a>
+    <a href="enquiriesList">EnquiriesList <i class="bi bi-person-lines-fill"></i></a>
     <a href="logout">Logout <i class="bi bi-box-arrow-right"></i></a>
 </div>
 
@@ -132,6 +132,7 @@
         <h3>Medical Test Requests</h3>
         <p><%= session.getAttribute("totalRequests") %></p>
     </div>
+     <hr style="width: 100%; border-top: 1px solid #ed563b; margin-top: 20px;">
 </div>
 
 </body>

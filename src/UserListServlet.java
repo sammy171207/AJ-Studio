@@ -32,7 +32,8 @@ public class UserListServlet extends HttpServlet {
                 printUserData(userList);
                 
                 // Forward the request to the JSP page
-           response.sendRedirect("user.jsp");
+                request.getRequestDispatcher("user.jsp").forward(request, response);
+
             } catch (SQLException e) {
                 e.printStackTrace();
                 // Handle error
@@ -57,9 +58,18 @@ public class UserListServlet extends HttpServlet {
             rs = stmt.executeQuery();
 
             while (rs.next()) {
-                String[] memberData = new String[2];
+                String[] memberData = new String[10];
                 memberData[0] = rs.getString("first_name");
                 memberData[1] = rs.getString("last_name");
+                memberData[2] = rs.getString("email");
+                memberData[3] = rs.getString("phone");
+                memberData[4] = rs.getString("address");
+                memberData[5] = rs.getString("city");
+                memberData[6] = rs.getString("state");
+                memberData[7] = rs.getString("zip_code");
+                memberData[8] = rs.getString("date_joined"); // Assuming "date_joined" is stored as a String in the database
+                memberData[9] = rs.getString("membership_type");
+                
                 // Add other member data if needed
                 memberList.add(memberData);
             }
