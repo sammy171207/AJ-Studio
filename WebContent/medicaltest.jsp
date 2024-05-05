@@ -136,7 +136,7 @@
 
 <!-- Content -->
 <div class="content">
-    <form action="#">
+    <form action="test" method="post">
         <label for="testName">Test Name:</label>
         <input type="text" id="testName" name="testName" required>
 

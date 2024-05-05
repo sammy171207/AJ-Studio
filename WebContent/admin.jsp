@@ -109,7 +109,7 @@
             <span style="color: #ec1010;">AJ</span> <span style="color: white;">Studio</span>
         </h2>
     </a>
-    <a href="#home">Medical Test List<i class="bi bi-heart-pulse"></i></a>
+    <a href="test?action=list">Medical Test List<i class="bi bi-heart-pulse"></i></a>
     <a href="userList">User List <i class="bi bi-person-fill-check"></i></a>
     <a href="enquiriesList">EnquiriesList <i class="bi bi-person-lines-fill"></i></a>
     <a href="logout">Logout <i class="bi bi-box-arrow-right"></i></a>
